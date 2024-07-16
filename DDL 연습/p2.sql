@@ -1,4 +1,7 @@
+DROP TABLE IF EXISTS shopping;
+
 CREATE TABLE shopping (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(64),
     price INTEGER,
     stock INTEGER

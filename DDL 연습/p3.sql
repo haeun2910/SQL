@@ -1,11 +1,14 @@
+
+DROP TABLE IF EXISTS menu;
+
 CREATE TABLE menu (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(64),
     category VARCHAR(64),
     description TEXT,
     price INTEGER,
     vegetarian TEXT
 );
-
 
 INSERT INTO menu (name, category, description,price,vegetarian)
 VALUES ('Chicken Parmesan', '양식', 'Chicken ', 150, 'NO'),

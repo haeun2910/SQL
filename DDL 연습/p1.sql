@@ -1,4 +1,7 @@
+DROP TABLE IF EXISTS employee;
+
 CREATE TABLE employee (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     year INTEGER,
     grade TEXT,

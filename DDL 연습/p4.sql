@@ -1,13 +1,19 @@
+DROP TABLE IF EXISTS music;
+
 CREATE TABLE music (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     title VARCHAR(128),
     artist VARCHAR(64),
-    writer VARCHAR(64),
-    lyrics VARCHAR(128),
+    writer_by VARCHAR(64),
+    lyrics_by VARCHAR(128),
     album_name VARCHAR(64),
     year INTEGER,
+  --  month INTEGER,
+  --  day INTEGER,
+  --  release_date TEXT.
     dur_in_secs INTEGER 
 );
-INSERT INTO music (title,artist,writer,lyrics,album_name,year,dur_in_secs)
+INSERT INTO music (title,artist,writer_by,lyrics_by,album_name,year,dur_in_secs)
 VALUES
 ('Lorem ipsum dolor', 'John Doe', 'Jane Doe', 'Sed ut perspiciatis unde omnis', 'consequatur', 1998, 210),
 ('Lorem ipsum dolor', 'Alice Smith', 'John Smith', 'Nemo enim ipsam voluptatem', 'voluptas', 2005, 345),
